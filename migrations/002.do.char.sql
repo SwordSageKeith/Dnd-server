@@ -5,4 +5,4 @@ CREATE TABLE characters (
 	race TEXT NOT NULL,
 	class TEXT NOT NULL,
 	char_level INTEGER DEFAULT 1
-)
+);

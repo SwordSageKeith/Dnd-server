@@ -7,7 +7,7 @@ CREATE TABLE stats(
 	wis INTEGER NOT NULL,
 	intl INTEGER NOT NULL,
 	cha INTEGER NOT NULL
-)
+);
 
 CREATE TABLE info(
 	id SERIAL PRIMARY KEY,
@@ -19,4 +19,4 @@ CREATE TABLE info(
 	fort INTEGER NOT NULL,
 	con INTEGER NOT NULL,
 	descrip TEXT
-)
+);

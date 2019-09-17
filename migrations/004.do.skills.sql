@@ -18,5 +18,5 @@ CREATE TABLE skills(
 	religion INTEGER DEFAULT 0,
 	sleight_of_hand INTEGER DEFAULT 0,
 	stealth INTEGER DEFAULT 0,
-	survival INTEGER DEFAULT 0,
-)
+	survival INTEGER DEFAULT 0
+);
