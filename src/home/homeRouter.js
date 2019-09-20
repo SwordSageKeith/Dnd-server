@@ -49,12 +49,12 @@ homeRouter
       res.json(send)
     })
   })
-
+ 
 homeRouter.post('/create', (req, res, next) => {
-  let {char} = req.body
-  console.log('char  ' +req.body[0].name)
-  homeService.createCharacter(req.app.get('db'), req.user.id, char)
-
+  homeService.createCharacter(req.app.get('db'), req.body[2].ownr, req.body)
+  homeService.createInfo(req.app.get('db'), req.body[2].ownr, req.body)
+  homeService.createStats(req.app.get('db'), req.body[2].ownr, req.body)
+  homeService.createSkills(req.app.get('db'), req.body[2].ownr, req.body)
 
   res.status(201, 'created')
 })
